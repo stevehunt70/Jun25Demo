@@ -5,18 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div align="center">
         <h1>Contact Form</h1>
     </div>
-    <div align="center">
+    <div align="center">        
         <form action="submit.php" method="post">
-            <label for="name">Name:</label>
+            <!--dropdown selections -->
+            <label for="dropdown"><b>Choose Your Reason (dropdown):</b></label><br>
+            <select name="dropdown" id="reason">
+                <option value=none selected disabled hidden>please choose</option>
+                <option value="sql">help with SQL</option>
+                <option value="html">help with HTML</option>
+                <option value="css">help with CSS</option>
+                <option value="xl">help with MS Excel</option>
+            </select><br><br><br>
+            <!--checkbox selections -->
+            <label><b>Choose Your Reason (chkBox):</b></label><br>
+            <div>
+                <input type="checkbox" name="sqlCB" value="cbSQL">
+                <label for="sqlCB">Help with SQL</label>
+
+                <input type="checkbox" name="htmlCB" value="cbHTML">        
+                <label for="htmlCB">Help with HTML</label><br><br>
+
+                <input type="checkbox" name="cssCB" value="cbCSS">            
+                <label for="cssCB">Help with CSS</label>
+
+                <input type="checkbox" name="xlCB" value="cbXL">            
+                <label for="xlCB">Help with MS Excel</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--form text input -->
+            <label for="name"><b>Name:</b></label>
             <input type="text" name="name"><br><br>
-            <label for="email">Email:</label>
+            <label for="email"><b>Email:</b></label>
             <input type="text" name="email"><br><br>
-            <label for="tel">Telephone:</label>
+            <label for="tel"><b>Tel:</b></label>
             <input type="tel" name="tel"><br><br>
+            <label for="txtmulti"><b>Message:</b></label><br>
+            <textarea name="txtmulti" cols="50" rows="8"></textarea><br><br>
             <button>SUBMIT</button>
         </form>
     </div>
