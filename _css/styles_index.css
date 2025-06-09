@@ -16,6 +16,7 @@ a {
     gap: 10px;
     max-width: 30%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .containerContact .header {
